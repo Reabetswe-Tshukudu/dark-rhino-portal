@@ -7,12 +7,20 @@ interface ServiceCardProps {
   description: string;
   icon: LucideIcon;
   href: string;
+  image: string;
 }
 
-export const ServiceCard = ({ title, description, icon: Icon, href }: ServiceCardProps) => {
+export const ServiceCard = ({ title, description, icon: Icon, href, image }: ServiceCardProps) => {
   return (
     <Link to={href} className="service-card group">
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent group-hover:from-primary/10" />
+      <div className="absolute inset-0">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-card to-card/95" />
+      </div>
       <div className="relative space-y-4">
         <div className="inline-flex p-3 rounded-lg bg-primary/10 text-primary">
           <Icon className="h-6 w-6" />

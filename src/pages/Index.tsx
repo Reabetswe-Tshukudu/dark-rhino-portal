@@ -3,6 +3,7 @@ import { Shield, Server, Construction } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { ServiceCard } from "@/components/ServiceCard";
+import { Footer } from "@/components/Footer";
 
 const services = [
   {
@@ -11,6 +12,7 @@ const services = [
       "Comprehensive security services including manned guarding, surveillance, and risk assessment.",
     icon: Shield,
     href: "/services/security",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1470&auto=format&fit=crop",
   },
   {
     title: "ICT Solutions",
@@ -18,6 +20,7 @@ const services = [
       "Advanced technology solutions covering cybersecurity, infrastructure, and software development.",
     icon: Server,
     href: "/services/ict",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop",
   },
   {
     title: "Construction",
@@ -25,6 +28,7 @@ const services = [
       "Expert construction services for residential, commercial, and civil engineering projects.",
     icon: Construction,
     href: "/services/construction",
+    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1470&auto=format&fit=crop",
   },
 ];
 
@@ -49,6 +53,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

@@ -43,6 +43,7 @@ const ICT = () => {
         title="ICT Solutions"
         description="Cutting-edge technology solutions that drive digital transformation and enhance operational efficiency. Our ICT services help businesses stay ahead in the digital age."
         services={ictServices}
+        heroImage="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop"
       />
     </>
   );

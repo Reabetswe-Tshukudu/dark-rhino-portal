@@ -43,6 +43,7 @@ const Security = () => {
         title="Security Solutions"
         description="Comprehensive security services tailored to protect your assets, people, and peace of mind. Our expert team delivers professional security solutions for businesses and individuals."
         services={securityServices}
+        heroImage="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1470&auto=format&fit=crop"
       />
     </>
   );

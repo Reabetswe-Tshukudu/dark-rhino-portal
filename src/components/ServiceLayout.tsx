@@ -9,12 +9,31 @@ interface ServiceLayoutProps {
     title: string;
     description: string;
   }[];
+  heroImage: string;
   children?: React.ReactNode;
 }
 
-export const ServiceLayout = ({ title, description, services }: ServiceLayoutProps) => {
+export const ServiceLayout = ({ title, description, services, heroImage }: ServiceLayoutProps) => {
   return (
     <div className="min-h-screen bg-background pt-16">
+      {/* Hero Image */}
+      <div className="relative h-[40vh] overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={heroImage}
+            alt={title}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-background/50" />
+        </div>
+        <div className="relative h-full container mx-auto px-4 flex items-center">
+          <div className="max-w-3xl space-y-4">
+            <h1 className="text-4xl font-bold tracking-tight">{title}</h1>
+            <p className="text-lg">{description}</p>
+          </div>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 py-12">
         {/* Back Button */}
         <Link
@@ -24,12 +43,6 @@ export const ServiceLayout = ({ title, description, services }: ServiceLayoutPro
           <ArrowLeft className="h-4 w-4" />
           Back to Home
         </Link>
-
-        {/* Header Section */}
-        <div className="max-w-3xl space-y-4 mb-16 animate-in">
-          <h1 className="text-4xl font-bold tracking-tight">{title}</h1>
-          <p className="text-lg text-muted-foreground">{description}</p>
-        </div>
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">

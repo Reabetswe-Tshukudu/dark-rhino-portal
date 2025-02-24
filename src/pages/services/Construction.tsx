@@ -43,6 +43,7 @@ const Construction = () => {
         title="Construction Services"
         description="Professional construction services delivering excellence in residential, commercial, and civil engineering projects. We build the future with quality and innovation."
         services={constructionServices}
+        heroImage="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1470&auto=format&fit=crop"
       />
     </>
   );

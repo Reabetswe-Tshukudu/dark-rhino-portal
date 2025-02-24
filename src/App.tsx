@@ -8,6 +8,10 @@ import Index from "./pages/Index";
 import Security from "./pages/services/Security";
 import ICT from "./pages/services/ICT";
 import Construction from "./pages/services/Construction";
+import About from "./pages/About";
+import Process from "./pages/Process";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,10 +27,10 @@ const App = () => (
           <Route path="/services/security" element={<Security />} />
           <Route path="/services/ict" element={<ICT />} />
           <Route path="/services/construction" element={<Construction />} />
-          <Route path="/about" element={<NotFound />} />
-          <Route path="/process" element={<NotFound />} />
-          <Route path="/projects" element={<NotFound />} />
-          <Route path="/contact" element={<NotFound />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/process" element={<Process />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -80,15 +80,15 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+27 76 545 6367</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>contact@darkrhino.com</span>
+                <span>DarkRhinoGroup@gmail.com</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>123 Business Avenue, NY 10001</span>
+                <span>Head Office: Sandton, South Africa</span>
               </li>
             </ul>
           </div>

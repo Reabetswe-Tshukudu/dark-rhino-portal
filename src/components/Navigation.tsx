@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Home } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,6 +13,7 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
+    { label: "Home", href: "/", icon: Home },
     { label: "About Us", href: "/about" },
     {
       label: "Services",
@@ -56,8 +57,13 @@ export const Navigation = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
               ) : (
-                <Link key={item.label} to={item.href} className="nav-link">
-                  {item.label}
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="nav-link flex items-center space-x-1"
+                >
+                  {item.icon && <item.icon className="h-4 w-4" />}
+                  <span>{item.label}</span>
                 </Link>
               )
             )}
@@ -105,6 +111,7 @@ export const Navigation = () => {
                   className="nav-link block py-2"
                   onClick={() => setIsOpen(false)}
                 >
+                  {item.icon && <item.icon className="h-4 w-4 inline-block mr-2" />}
                   {item.label}
                 </Link>
               )

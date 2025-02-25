@@ -25,19 +25,13 @@ export const Hero = () => {
             Dark Rhino Group delivers integrated security, ICT, and construction solutions
             that protect and empower businesses for tomorrow's challenges.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4">
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
             >
               Get Started
               <ArrowRight className="h-4 w-4" />
-            </Link>
-            <Link
-              to="/services"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors"
-            >
-              Our Services
             </Link>
           </div>
         </div>

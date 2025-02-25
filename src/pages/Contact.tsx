@@ -33,7 +33,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground">+27 76 545 6367</p>
                   </div>
                 </div>
 
@@ -43,7 +43,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-muted-foreground">contact@darkrhino.com</p>
+                    <p className="text-muted-foreground">DarkRhinoGroup@gmail.com</p>
                   </div>
                 </div>
 
@@ -54,8 +54,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold">Address</h3>
                     <p className="text-muted-foreground">
-                      123 Business Avenue, Suite 100<br />
-                      New York, NY 10001
+                      Head Office: Sandton, South Africa
                     </p>
                   </div>
                 </div>

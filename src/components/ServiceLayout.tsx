@@ -13,7 +13,7 @@ interface ServiceLayoutProps {
   children?: React.ReactNode;
 }
 
-export const ServiceLayout = ({ title, description, services, heroImage }: ServiceLayoutProps) => {
+export const ServiceLayout = ({ title, description, services, heroImage, children }: ServiceLayoutProps) => {
   return (
     <div className="min-h-screen bg-background pt-16">
       {/* Hero Image */}
@@ -44,8 +44,11 @@ export const ServiceLayout = ({ title, description, services, heroImage }: Servi
           Back to Home
         </Link>
 
+        {/* Children Content */}
+        {children}
+
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 mt-12">
           {services.map((service, index) => (
             <div
               key={index}

@@ -32,7 +32,7 @@ const SecurityPage = () => {
         title="Security Solutions"
         description="Comprehensive security services to protect your assets and ensure peace of mind"
         services={services}
-        heroImage="https://images.unsplash.com/photo-1582559934353-2e47140e7501?q=80&w=1470&auto=format&fit=crop"
+        heroImage="/lovable-uploads/5f0e9d25-a4c2-428c-9066-e9e575b0b4b2.png"
       >
         <div className="space-y-6">
           <h2 className="text-3xl font-bold">Professional Security Services</h2>
@@ -44,8 +44,8 @@ const SecurityPage = () => {
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <img
-              src="https://images.unsplash.com/photo-1561134643-568b4d64b3e5?q=80&w=1470&auto=format&fit=crop"
-              alt="Security Monitoring"
+              src="/lovable-uploads/5f0e9d25-a4c2-428c-9066-e9e575b0b4b2.png"
+              alt="Security Guard"
               className="rounded-lg w-full h-48 object-cover"
             />
             <img

@@ -24,24 +24,22 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold">Our Mission</h2>
-              <p className="text-muted-foreground">
-                To provide comprehensive, innovative solutions that protect and empower our clients,
-                enabling them to focus on their core business while we handle their security,
-                technology, and infrastructure needs.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold">Our Vision</h2>
-              <p className="text-muted-foreground">
-                To be the leading integrated solutions provider, recognized globally for our
-                excellence in security, ICT, and construction services, while maintaining the
-                highest standards of professionalism and innovation.
-              </p>
-            </div>
+          <div className="space-y-6">
+            <p className="text-muted-foreground">
+              At Dark Rhino Group, we are committed to excellence, innovation, and integrity. As a dynamic and forward-thinking company, we specialize in providing top-tier solutions across multiple industries, including security, consulting, construction and business development.
+            </p>
+            
+            <p className="text-muted-foreground">
+              Our mission is to empower businesses and communities by delivering reliable, efficient, and cutting-edge services tailored to their unique needs. With a team of skilled professionals and a dedication to customer satisfaction, we strive to set new standards in our field.
+            </p>
+            
+            <p className="text-muted-foreground">
+              At Dark Rhino Group, we believe in strong partnerships, strategic growth, and unwavering commitment to quality. Whether it's securing your assets, optimizing your business operations, or driving impactful change, we are your trusted partner for success.
+            </p>
+            
+            <p className="text-muted-foreground font-semibold">
+              Strength. Strategy. Success. – That's the Dark Rhino way.
+            </p>
           </div>
 
           <div className="space-y-4">

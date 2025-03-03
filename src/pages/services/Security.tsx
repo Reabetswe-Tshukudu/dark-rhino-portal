@@ -32,7 +32,7 @@ const SecurityPage = () => {
         title="Security Solutions"
         description="Comprehensive security services to protect your assets and ensure peace of mind"
         services={services}
-        heroImage="/lovable-uploads/5f0e9d25-a4c2-428c-9066-e9e575b0b4b2.png"
+        heroImage="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1470&auto=format&fit=crop"
       >
         <div className="space-y-6">
           <h2 className="text-3xl font-bold">Professional Security Services</h2>
@@ -44,15 +44,47 @@ const SecurityPage = () => {
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <img
-              src="/lovable-uploads/5f0e9d25-a4c2-428c-9066-e9e575b0b4b2.png"
-              alt="Security Guard"
+              src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?q=80&w=1470&auto=format&fit=crop"
+              alt="Security Monitoring System"
               className="rounded-lg w-full h-48 object-cover"
             />
             <img
-              src="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?q=80&w=1470&auto=format&fit=crop"
-              alt="Security Guard"
+              src="https://images.unsplash.com/photo-1558002038-648d1b475f10?q=80&w=1470&auto=format&fit=crop"
+              alt="Security Camera"
               className="rounded-lg w-full h-48 object-cover"
             />
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6 mt-8">
+            <div className="bg-card border border-border/50 rounded-lg p-6 space-y-4">
+              <div className="p-3 rounded-full bg-primary/10 w-fit">
+                <UserCheck className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold">Access Control</h3>
+              <p className="text-muted-foreground text-sm">
+                Advanced access control systems to manage and monitor entry points
+              </p>
+            </div>
+            
+            <div className="bg-card border border-border/50 rounded-lg p-6 space-y-4">
+              <div className="p-3 rounded-full bg-primary/10 w-fit">
+                <Camera className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold">Video Surveillance</h3>
+              <p className="text-muted-foreground text-sm">
+                24/7 monitoring with high-definition security cameras
+              </p>
+            </div>
+            
+            <div className="bg-card border border-border/50 rounded-lg p-6 space-y-4">
+              <div className="p-3 rounded-full bg-primary/10 w-fit">
+                <Bell className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold">Alarm Systems</h3>
+              <p className="text-muted-foreground text-sm">
+                Rapid response alarms with instant notifications
+              </p>
+            </div>
           </div>
         </div>
       </ServiceLayout>

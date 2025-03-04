@@ -1,10 +1,11 @@
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Services from "./pages/Services";
+import Services from "./pages/Process";
 import Security from "./pages/services/Security";
-import Technology from "./pages/services/Technology";
+import Technology from "./pages/services/ICT";
 import Construction from "./pages/services/Construction";
 import { Toaster } from "@/components/ui/toaster";
 

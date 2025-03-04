@@ -49,7 +49,7 @@ const SecurityPage = () => {
               className="rounded-lg w-full h-48 object-cover"
             />
             <img
-              src="https://images.unsplash.com/photo-1557183983-0a5f3ed3df8f?q=80&w=1476&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?q=80&w=1470&auto=format&fit=crop"
               alt="CCTV Security Cameras"
               className="rounded-lg w-full h-48 object-cover"
             />

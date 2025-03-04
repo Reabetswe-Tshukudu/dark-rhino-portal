@@ -11,18 +11,20 @@ import { Toaster } from "@/components/ui/toaster";
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/services/security" element={<Security />} />
-        <Route path="/services/technology" element={<Technology />} />
-        <Route path="/services/construction" element={<Construction />} />
-      </Routes>
-      <Toaster />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-background text-foreground">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/security" element={<Security />} />
+          <Route path="/services/technology" element={<Technology />} />
+          <Route path="/services/construction" element={<Construction />} />
+        </Routes>
+        <Toaster />
+      </div>
+    </Router>
   );
 }
 

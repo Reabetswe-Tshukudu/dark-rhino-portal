@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { ArrowLeft, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -33,7 +32,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-muted-foreground">+27 76 545 6367</p>
+                    <p className="text-muted-foreground">+27 67 6089259</p>
                   </div>
                 </div>
 

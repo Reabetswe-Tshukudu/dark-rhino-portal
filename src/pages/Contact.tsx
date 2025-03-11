@@ -4,6 +4,7 @@ import { ArrowLeft, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -61,7 +62,7 @@ const Contact = () => {
     return valid;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!validateForm()) {
@@ -70,16 +71,38 @@ const Contact = () => {
     
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      // Replace these with your actual EmailJS service ID, template ID, and user ID
+      const serviceId = 'YOUR_EMAILJS_SERVICE_ID';
+      const templateId = 'YOUR_EMAILJS_TEMPLATE_ID';
+      const userId = 'YOUR_EMAILJS_USER_ID';
+      
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_name: 'Dark Rhino Group'
+      };
+      
+      await emailjs.send(serviceId, templateId, templateParams, userId);
+      
       setFormData({ name: "", email: "", message: "" });
       
       toast({
         title: "Message sent",
         description: "Thank you for your message. We'll get back to you soon!",
       });
-    }, 1000);
+    } catch (error) {
+      console.error("Error sending email:", error);
+      
+      toast({
+        title: "Error",
+        description: "Failed to send your message. Please try again later.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

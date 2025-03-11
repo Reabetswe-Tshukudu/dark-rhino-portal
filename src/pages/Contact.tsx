@@ -6,6 +6,9 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from 'emailjs-com';
 
+// Initialize EmailJS with your user ID (public key)
+emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -72,10 +75,9 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // Replace these with your actual EmailJS service ID, template ID, and user ID
+      // Replace these with your actual EmailJS service ID and template ID
       const serviceId = 'YOUR_EMAILJS_SERVICE_ID';
       const templateId = 'YOUR_EMAILJS_TEMPLATE_ID';
-      const userId = 'YOUR_EMAILJS_USER_ID';
       
       const templateParams = {
         from_name: formData.name,
@@ -84,7 +86,8 @@ const Contact = () => {
         to_name: 'Dark Rhino Group'
       };
       
-      await emailjs.send(serviceId, templateId, templateParams, userId);
+      // No need to pass userId here as we initialized it above
+      await emailjs.send(serviceId, templateId, templateParams);
       
       setFormData({ name: "", email: "", message: "" });
       

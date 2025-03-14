@@ -2,7 +2,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ServiceLayout } from "@/components/ServiceLayout";
-import { Building, Hammer, Leaf, HardHat } from "lucide-react";
+import { Building, Hammer, Leaf, HardHat, Warehouse, Truck } from "lucide-react";
 
 const constructionServices = [
   {
@@ -34,6 +34,16 @@ const constructionServices = [
     title: "Green Building Solutions",
     description:
       "Sustainable construction practices and eco-friendly building solutions for environmentally conscious projects.",
+  },
+  {
+    title: "Brick Manufacturing",
+    description:
+      "High-quality brick production with various styles, colors, and specifications to meet your construction needs.",
+  },
+  {
+    title: "Building Materials Supply",
+    description:
+      "Supply of various types of sand, concrete, and other building materials delivered directly to your construction site.",
   },
 ];
 
@@ -98,6 +108,49 @@ const Construction = () => {
               <p className="text-muted-foreground text-sm">
                 Eco-friendly construction practices for a greener South Africa
               </p>
+            </div>
+          </div>
+          
+          {/* New section for brick making and materials supply */}
+          <div className="mt-12 py-8 border-t border-border/50">
+            <h2 className="text-2xl font-bold mb-6">Materials Manufacturing & Supply</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-card border border-border/50 rounded-lg p-6 space-y-4">
+                <div className="p-3 rounded-full bg-primary/10 w-fit">
+                  <Warehouse className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold">Brick Manufacturing</h3>
+                <p className="text-muted-foreground">
+                  We manufacture high-quality bricks for all construction needs. Our brick production facility 
+                  uses modern techniques to create durable, reliable bricks in various types:
+                </p>
+                <ul className="list-disc pl-5 text-muted-foreground space-y-1">
+                  <li>Standard face bricks</li>
+                  <li>Engineering bricks for high-strength applications</li>
+                  <li>Decorative and specialty bricks</li>
+                  <li>Eco-friendly brick options</li>
+                </ul>
+              </div>
+              
+              <div className="bg-card border border-border/50 rounded-lg p-6 space-y-4">
+                <div className="p-3 rounded-full bg-primary/10 w-fit">
+                  <Truck className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold">Building Materials Supply</h3>
+                <p className="text-muted-foreground">
+                  We supply a comprehensive range of construction materials delivered directly to your site:
+                </p>
+                <ul className="list-disc pl-5 text-muted-foreground space-y-1">
+                  <li>Various grades of sand (building, plaster, river)</li>
+                  <li>Ready-mix concrete in different strengths</li>
+                  <li>Specialty concrete mixes for specific applications</li>
+                  <li>Aggregate materials in various sizes</li>
+                  <li>Cement and cement products</li>
+                </ul>
+                <p className="text-muted-foreground mt-2">
+                  Our materials meet industry standards and are quality-tested to ensure durability and performance.
+                </p>
+              </div>
             </div>
           </div>
         </div>

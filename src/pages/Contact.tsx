@@ -1,13 +1,13 @@
-
 import { Navigation } from "@/components/Navigation";
 import { ArrowLeft, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from 'emailjs-com';
 
-// Initialize EmailJS with your user ID (public key)
-emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+// Initialize EmailJS with your public key
+// You need to replace this with your actual EmailJS public key
+emailjs.init("YOUR_ACTUAL_EMAILJS_PUBLIC_KEY");
 
 const Contact = () => {
   const { toast } = useToast();
@@ -76,8 +76,8 @@ const Contact = () => {
     
     try {
       // Replace these with your actual EmailJS service ID and template ID
-      const serviceId = 'YOUR_EMAILJS_SERVICE_ID';
-      const templateId = 'YOUR_EMAILJS_TEMPLATE_ID';
+      const serviceId = 'YOUR_ACTUAL_EMAILJS_SERVICE_ID';
+      const templateId = 'YOUR_ACTUAL_EMAILJS_TEMPLATE_ID';
       
       const templateParams = {
         from_name: formData.name,
@@ -86,7 +86,6 @@ const Contact = () => {
         to_name: 'Dark Rhino Group'
       };
       
-      // No need to pass userId here as we initialized it above
       await emailjs.send(serviceId, templateId, templateParams);
       
       setFormData({ name: "", email: "", message: "" });

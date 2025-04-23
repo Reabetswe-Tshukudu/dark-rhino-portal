@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -7,8 +6,7 @@ import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 
 // Initialize EmailJS with your public key
-// You need to replace this with your actual EmailJS public key
-emailjs.init("YOUR_ACTUAL_EMAILJS_PUBLIC_KEY");
+emailjs.init("wvJ4hHf8KL9ZNoSD3");
 
 // EmailJS service and template IDs
 const SERVICE_ID = 'service_ks6w7eo'; // Updated with user's service ID

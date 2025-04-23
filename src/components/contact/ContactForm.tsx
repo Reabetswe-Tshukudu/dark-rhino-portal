@@ -74,14 +74,17 @@ const ContactForm = ({ serviceId, templateId }: ContactFormProps) => {
     
     try {
       const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
+        user_name: formData.name,
+        user_email: formData.email,
         message: formData.message,
         to_name: 'Dark Rhino Group',
         subject: `Contact Request from ${formData.name}`,
-        reply_to: formData.email
+        reply_to: formData.email,
+        from_name: formData.name,
+        from_email: formData.email
       };
       
+      console.log("Sending email with params:", templateParams);
       await emailjs.send(serviceId, templateId, templateParams);
       
       setFormData({ name: "", email: "", message: "" });

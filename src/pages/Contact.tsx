@@ -1,18 +1,22 @@
+
 import { Navigation } from "@/components/Navigation";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import emailjs from 'emailjs-com';
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
-
-// Initialize EmailJS with your public key
-emailjs.init("wvJ4hHf8KL9ZNoSD3");
+import { useEffect } from "react";
 
 // EmailJS service and template IDs
-const SERVICE_ID = 'service_ks6w7eo'; // Updated with user's service ID
+const SERVICE_ID = 'service_ks6w7eo';
 const TEMPLATE_ID = 'template_6wnu294';
 
 const Contact = () => {
+  // Initialize EmailJS with your public key
+  useEffect(() => {
+    emailjs.init("wvJ4hHf8KL9ZNoSD3");
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />

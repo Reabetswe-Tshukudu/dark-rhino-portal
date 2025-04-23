@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from 'emailjs-com';
@@ -78,7 +77,9 @@ const ContactForm = ({ serviceId, templateId }: ContactFormProps) => {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
-        to_name: 'Dark Rhino Group'
+        to_name: 'Dark Rhino Group',
+        subject: `Contact Request from ${formData.name}`,
+        reply_to: formData.email
       };
       
       await emailjs.send(serviceId, templateId, templateParams);

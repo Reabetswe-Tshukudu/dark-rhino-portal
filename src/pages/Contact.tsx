@@ -10,7 +10,7 @@ emailjs.init("wvJ4hHf8KL9ZNoSD3");
 
 // EmailJS service and template IDs
 const SERVICE_ID = 'service_ks6w7eo'; // Updated with user's service ID
-const TEMPLATE_ID = 'YOUR_ACTUAL_EMAILJS_TEMPLATE_ID';
+const TEMPLATE_ID = 'template_6wnu294';
 
 const Contact = () => {
   return (

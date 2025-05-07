@@ -2,7 +2,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ServiceLayout } from "@/components/ServiceLayout";
-import { Building, Hammer, Leaf, HardHat, Warehouse, Truck, Tools, BuildingTwo, Traffic } from "lucide-react";
+import { Building, Hammer, Leaf, HardHat, Warehouse, Truck, Building as BuildingIcon, Building as BuildingTwo } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 

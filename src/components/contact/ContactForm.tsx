@@ -74,10 +74,10 @@ const ContactForm = ({ serviceId, templateId }: ContactFormProps) => {
     setIsSubmitting(true);
     
     try {
-      // Match these parameters with the variables in your EmailJS template
+      // These parameters must match your EmailJS template variables exactly
       const templateParams = {
-        name: formData.name,
-        email: formData.email,
+        from_name: formData.name,
+        from_email: formData.email,
         message: formData.message,
         to_name: 'Dark Rhino Group',
         subject: `Contact Request from ${formData.name}`,

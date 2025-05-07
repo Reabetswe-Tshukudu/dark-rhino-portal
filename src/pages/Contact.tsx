@@ -10,11 +10,12 @@ import { useEffect } from "react";
 // EmailJS service and template IDs
 const SERVICE_ID = 'service_ks6w7eo';
 const TEMPLATE_ID = 'template_6wnu294';
+const PUBLIC_KEY = 'wvJ4hHf8KL9ZNoSD3';
 
 const Contact = () => {
   // Initialize EmailJS with your public key
   useEffect(() => {
-    emailjs.init("wvJ4hHf8KL9ZNoSD3");
+    emailjs.init(PUBLIC_KEY);
   }, []);
 
   return (

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from 'emailjs-com';
@@ -73,15 +74,14 @@ const ContactForm = ({ serviceId, templateId }: ContactFormProps) => {
     setIsSubmitting(true);
     
     try {
+      // Match these parameters with the variables in your EmailJS template
       const templateParams = {
-        user_name: formData.name,
-        user_email: formData.email,
+        name: formData.name,
+        email: formData.email,
         message: formData.message,
         to_name: 'Dark Rhino Group',
         subject: `Contact Request from ${formData.name}`,
-        reply_to: formData.email,
-        from_name: formData.name,
-        from_email: formData.email
+        reply_to: formData.email
       };
       
       console.log("Sending email with params:", templateParams);

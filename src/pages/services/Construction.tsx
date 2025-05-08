@@ -1,8 +1,7 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ServiceLayout } from "@/components/ServiceLayout";
-import { Building, Hammer, Leaf, HardHat, Warehouse, Truck, Building as BuildingIcon, Building as BuildingTwo, BarChart } from "lucide-react";
+import { Building, Hammer, Leaf, HardHat, Warehouse, Truck, Building as BuildingIcon, Building as BuildingTwo, BarChart, Road } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -249,7 +248,7 @@ const Construction = () => {
             <TabsContent value="civil" className="mt-6 space-y-4">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Traffic className="h-6 w-6 text-primary" />
+                  <Road className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Civil Engineering & Infrastructure</h3>

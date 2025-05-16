@@ -26,7 +26,7 @@ const ictTabs = [
   { name: "Cybersecurity", path: "/services/security" },
   { name: "Network", path: "/services/network" },
   { name: "Software", path: "/services/ict" },
-  { name: "Cloud", path: "/services/cloud" },
+  { name: "Cloud", path: "/services/construction" },
 ];
 
 const ICT = () => {

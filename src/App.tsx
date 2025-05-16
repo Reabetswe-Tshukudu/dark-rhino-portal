@@ -7,6 +7,7 @@ import Services from "./pages/Process";
 import Security from "./pages/services/Security";
 import Technology from "./pages/services/ICT";
 import Construction from "./pages/services/Construction";
+import Network from "./pages/services/Network";
 import Projects from "./pages/Projects";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/services/security" element={<Security />} />
           <Route path="/services/ict" element={<Technology />} />
           <Route path="/services/construction" element={<Construction />} />
+          <Route path="/services/network" element={<Network />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
         <Toaster />

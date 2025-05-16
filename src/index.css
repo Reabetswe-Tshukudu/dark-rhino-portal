@@ -53,7 +53,7 @@
   }
   
   .service-tab {
-    @apply block py-3 px-6 text-center transition-all border-b-2 border-transparent;
+    @apply block py-3 px-6 text-center transition-all border-b-2 border-transparent hover:text-primary;
   }
   
   .service-tab.active {

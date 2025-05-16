@@ -13,16 +13,14 @@ export const ServiceTabs: React.FC<ServiceTabsProps> = ({ tabs }) => {
   const location = useLocation();
   
   return (
-    <div className="bg-secondary rounded-md flex w-full overflow-hidden border-primary/20 border">
+    <div className="flex border-b border-border mb-6">
       {tabs.map((tab) => (
         <Link
           key={tab.name}
           to={tab.path}
           className={cn(
-            "flex-1 py-3 px-4 text-center transition-all",
-            location.pathname === tab.path
-              ? "bg-primary text-primary-foreground font-medium"
-              : "hover:bg-secondary-foreground/10"
+            "service-tab",
+            location.pathname === tab.path && "active"
           )}
         >
           {tab.name}

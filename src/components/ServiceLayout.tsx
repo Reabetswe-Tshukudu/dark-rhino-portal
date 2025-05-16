@@ -1,6 +1,7 @@
 
 import { ArrowLeft, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ServiceTabs } from "./ServiceTabs";
 
 interface ServiceLayoutProps {
   title: string;
@@ -11,9 +12,20 @@ interface ServiceLayoutProps {
   }[];
   heroImage: string;
   children?: React.ReactNode;
+  tabs?: {
+    name: string;
+    path: string;
+  }[];
 }
 
-export const ServiceLayout = ({ title, description, services, heroImage, children }: ServiceLayoutProps) => {
+export const ServiceLayout = ({ 
+  title, 
+  description, 
+  services, 
+  heroImage, 
+  children,
+  tabs 
+}: ServiceLayoutProps) => {
   return (
     <div className="min-h-screen bg-background pt-16">
       {/* Hero Image */}
@@ -43,6 +55,13 @@ export const ServiceLayout = ({ title, description, services, heroImage, childre
           <ArrowLeft className="h-4 w-4" />
           Back to Home
         </Link>
+
+        {/* Service Tabs */}
+        {tabs && tabs.length > 0 && (
+          <div className="mb-8">
+            <ServiceTabs tabs={tabs} />
+          </div>
+        )}
 
         {/* Children Content */}
         {children}

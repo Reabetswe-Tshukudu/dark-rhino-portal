@@ -45,7 +45,7 @@
   }
   
   .service-card {
-    @apply relative overflow-hidden rounded-lg bg-card p-6 transition-all duration-300 hover:scale-[1.02] border border-border/50;
+    @apply relative overflow-hidden rounded-lg bg-card p-6 transition-all duration-300 hover:scale-[1.02] border border-primary/50;
   }
 
   .animate-in {

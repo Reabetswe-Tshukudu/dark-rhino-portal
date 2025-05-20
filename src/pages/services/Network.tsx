@@ -24,10 +24,10 @@ const networkServices = [
 ];
 
 const networkTabs = [
-  { name: "Infrastructure", path: "/services/security" },
-  { name: "Wireless", path: "/services/network" },
-  { name: "WAN/LAN", path: "/services/ict" },
-  { name: "Monitoring", path: "/services/construction" },
+  { name: "Infrastructure", path: "/services/network/infrastructure" },
+  { name: "Wireless", path: "/services/network/wireless" },
+  { name: "WAN/LAN", path: "/services/network/wan-lan" },
+  { name: "Monitoring", path: "/services/network/monitoring" },
 ];
 
 const Network = () => {

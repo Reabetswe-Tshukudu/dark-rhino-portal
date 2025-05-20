@@ -23,10 +23,10 @@ const securityServices = [
 ];
 
 const securityTabs = [
-  { name: "Guards", path: "/services/security" },
-  { name: "CCTV", path: "/services/network" },
-  { name: "Access Control", path: "/services/ict" },
-  { name: "Alarms", path: "/services/construction" },
+  { name: "Guards", path: "/services/security/guards" },
+  { name: "CCTV", path: "/services/security/cctv" },
+  { name: "Access Control", path: "/services/security/access" },
+  { name: "Alarms", path: "/services/security/alarms" },
 ];
 
 const Security = () => {

@@ -23,10 +23,10 @@ const ictServices = [
 ];
 
 const ictTabs = [
-  { name: "Cybersecurity", path: "/services/security" },
-  { name: "Network", path: "/services/network" },
-  { name: "Software", path: "/services/ict" },
-  { name: "Cloud", path: "/services/construction" },
+  { name: "Cybersecurity", path: "/services/ict/cybersecurity" },
+  { name: "Network", path: "/services/ict/network" },
+  { name: "Software", path: "/services/ict/software" },
+  { name: "Cloud", path: "/services/ict/cloud" },
 ];
 
 const ICT = () => {

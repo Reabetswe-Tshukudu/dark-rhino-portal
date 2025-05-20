@@ -23,10 +23,10 @@ const constructionServices = [
 ];
 
 const constructionTabs = [
-  { name: "Residential", path: "/services/security" },
-  { name: "Commercial", path: "/services/network" },
-  { name: "Industrial", path: "/services/ict" },
-  { name: "Civil", path: "/services/construction" },
+  { name: "Residential", path: "/services/construction/residential" },
+  { name: "Commercial", path: "/services/construction/commercial" },
+  { name: "Industrial", path: "/services/construction/industrial" },
+  { name: "Civil", path: "/services/construction/civil" },
 ];
 
 const Construction = () => {

@@ -1,5 +1,6 @@
 
 import { Navigation } from "@/components/Navigation";
+import { CEOMessage } from "@/components/CEOMessage";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -41,6 +42,8 @@ const About = () => {
               Strength. Strategy. Success. – That's the Dark Rhino way.
             </p>
           </div>
+
+          <CEOMessage />
 
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold">Our Values</h2>

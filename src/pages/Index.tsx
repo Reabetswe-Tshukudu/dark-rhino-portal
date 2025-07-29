@@ -2,6 +2,7 @@
 import { Shield, Server, Construction } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
+import { CEOMessage } from "@/components/CEOMessage";
 import { ServiceCard } from "@/components/ServiceCard";
 import { Footer } from "@/components/Footer";
 
@@ -37,6 +38,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <Hero />
+      <CEOMessage />
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-in">

@@ -32,10 +32,13 @@ export const CEOMessage = () => {
                 </div>
                 
                 <div className="flex justify-center">
-                  <div className="w-48 h-48 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20">
-                    <div className="w-40 h-40 bg-primary/10 rounded-full flex items-center justify-center">
-                      <span className="text-5xl font-bold text-primary">RT</span>
-                    </div>
+                  <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 bg-gradient-to-br from-primary/5 to-background shadow-2xl">
+                    <img
+                      src="/lovable-uploads/0c9051bd-c857-4c3d-8fb9-6fd9c78d1313.png"
+                      alt="Reabetswe Tshukudu - CEO of Dark Rhino Group"
+                      className="w-full h-full object-cover object-center"
+                    />
+                    <div className="absolute inset-0 ring-2 ring-primary/10 rounded-full"></div>
                   </div>
                 </div>
               </div>

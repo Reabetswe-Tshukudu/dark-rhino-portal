@@ -8,6 +8,7 @@ import Security from "./pages/services/Security";
 import Technology from "./pages/services/ICT";
 import Construction from "./pages/services/Construction";
 import Network from "./pages/services/Network";
+import Welding from "./pages/services/Welding";
 import Projects from "./pages/Projects";
 import { Toaster } from "@/components/ui/toaster";
 

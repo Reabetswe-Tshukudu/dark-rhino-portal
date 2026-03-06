@@ -1,5 +1,5 @@
 
-import { Shield, Server, Construction } from "lucide-react";
+import { Shield, Server, Construction, Flame } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -29,6 +29,14 @@ const services = [
     icon: Construction,
     href: "/services/construction",
     image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1470&auto=format&fit=crop",
+  },
+  {
+    title: "Welding & Steel Fabrication",
+    description:
+      "Professional welding and steel fabrication for structural, industrial, and custom metalwork projects.",
+    icon: Flame,
+    href: "/services/welding",
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1470&auto=format&fit=crop",
   },
 ];
 

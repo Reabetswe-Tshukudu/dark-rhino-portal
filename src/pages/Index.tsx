@@ -1,5 +1,5 @@
 
-import { Shield, Server, Construction } from "lucide-react";
+import { Shield, Server, Construction, Flame } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { ServiceCard } from "@/components/ServiceCard";

@@ -25,6 +25,7 @@ function App() {
           <Route path="/services/ict" element={<Technology />} />
           <Route path="/services/construction" element={<Construction />} />
           <Route path="/services/network" element={<Network />} />
+          <Route path="/services/welding" element={<Welding />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
         <Toaster />

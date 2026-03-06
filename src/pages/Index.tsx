@@ -30,6 +30,14 @@ const services = [
     href: "/services/construction",
     image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1470&auto=format&fit=crop",
   },
+  {
+    title: "Welding & Steel Fabrication",
+    description:
+      "Professional welding and steel fabrication for structural, industrial, and custom metalwork projects.",
+    icon: Flame,
+    href: "/services/welding",
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1470&auto=format&fit=crop",
+  },
 ];
 
 const Index = () => {
